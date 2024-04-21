@@ -1,0 +1,1131 @@
+/* tility Clases */
+/* animation set */
+/* kartu */
+.sudah {
+  display: none;
+}
+.logo img {
+  height: 30px;
+  width: 48px;
+}
+
+::selection {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card#lok {
+  background: radial-gradient(circle, white 0%, #d5d5d5 100%);
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 3px 3px 17px 0px rgba(0, 0, 0, 0.55);
+  margin: auto;
+}
+
+.card#lok .remove, .card .logo {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.card .remove {
+  top: 30px;
+  right: 30px;
+  opacity: .9;
+  color: black;
+}
+
+.card .remove:hover {
+  color: #f06b5d;
+}
+.card .remove:active .belum{
+  display: none;
+}
+.card .remove:active .sudah{
+  display: unset;
+}
+.card .remove:hover .belum{
+  display: none;
+}
+.card .remove:hover .sudah{
+  display: unset;
+}
+
+.card .logo {
+  top: 20px;
+  left: 30px;
+  font-size: 3em;
+  opacity: 1;
+}
+
+.card .number, .card .owner {
+  display: block;
+  position: absolute;
+  left: 30px;
+  cursor: default;
+  color: black;
+  opacity: .9;
+  transition: color .7s ease-out;
+}
+
+.card .number {
+  bottom: 60px;
+  letter-spacing: 4px;
+}
+
+.card .owner {
+  bottom: 30px;
+  letter-spacing: 1px;
+}
+
+/* waves */
+.home .wave {
+  position: absolute;
+  z-index: -1 !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: url(img/wave.png);
+  background-size: cover;
+  margin-top: -23px;
+}
+.home .wave1 {
+  position: absolute;
+  z-index: -1;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: url(img/wave1.png);
+  background-size: cover;
+  margin-bottom: -25px;
+}
+.wave#wave1 {
+  opacity: 1;
+  animation: waves 24s linear infinite;
+  top: 0px;
+}
+.wave#wave2 {
+  opacity: 0.5;
+  animation: waves2 24s linear infinite;
+  top: 5px;
+}
+.wave#wave3 {
+  opacity: 0.2;
+  top: 10px;
+  animation: waves 12s linear infinite;
+}
+.wave#wave4 {
+  opacity: 0.7;
+  top:15px;
+  animation: waves2 12s linear infinite;
+}
+.wave1#wave1 {
+  opacity: 1;
+  animation: waves 24s linear infinite;
+  bottom: 0px;
+}
+.wave1#wave2 {
+  opacity: 0.5;
+  animation: waves2 24s linear infinite;
+  bottom: 5px;
+}
+.wave1#wave3 {
+  opacity: 0.2;
+  bottom: 10px;
+  animation: waves 12s linear infinite;
+}
+.wave1#wave4 {
+  opacity: 0.7;
+  bottom:15px;
+  animation: waves2 12s linear infinite;
+}
+/* infoWaves */
+.info .wave {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: url(img/wave.png);
+  background-size: cover;
+  margin-top: -25px;
+}
+.info .wave1 {
+  position: absolute;
+  z-index: 2;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: url(img/wave1.png);
+  background-size: cover;
+  margin-bottom: -25px;
+}
+
+/* komenWaves */
+.komen .wave {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: url(img/wave.png);
+  background-size: cover;
+  margin-top: -25px;
+}
+.komen .wave1 {
+  position: absolute;
+  z-index: 2;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: url(img/wave1.png);
+  background-size: cover;
+  margin-bottom: -25px;
+}
+
+/* leaves */
+.set {
+  position: absolute; width: 100%; height: 100%;
+  top:0; left: 0; pointer-events: none;
+  z-index: -1;
+  min-height: 300vh;
+  transform: scale(2);
+}
+.set img {
+  height: 20px; width: auto;
+}
+.set div {
+  position: absolute;
+  display: block;
+}
+.set2 {
+  position: absolute; width: 100%; height: 100%;
+  top:0; left: 0; pointer-events: none;
+  z-index: -1;
+  min-height: 200vh;
+  filter: blur(0.5px);
+  transform: scale(-3); rotate: 180deg;
+}
+
+.set2 img {
+  height: 15px; width: auto;
+}
+.set2 div {
+  position: absolute;
+  display: block;
+}
+.set div:nth-child(1) {
+  left:10%; animation: animate 22s linear infinite;
+}
+.set div:nth-child(2) {
+  left:20%; animation: animate 24s linear infinite;
+  animation-delay: -7s;
+}
+.set div:nth-child(3) {
+  left:30%; animation: animate 28s linear infinite;
+}
+.set div:nth-child(4) {
+  left:40%; animation: animate 26s linear infinite;
+  animation-delay: -3s;
+}
+.set div:nth-child(5) {
+  left:50%; animation: animate 21s linear infinite;
+  animation-delay: -2s;
+}
+.set div:nth-child(6) {
+  left:60%; animation: animate 23s linear infinite;
+  animation-delay: -1s;
+}
+.set div:nth-child(7) {
+  left:70%; animation: animate 22s linear infinite;
+}
+.set div:nth-child(8) {
+  left:80%; animation: animate 20s linear infinite;
+  animation-delay: -7s;
+}
+.set div:nth-child(9) {
+  left:90%; animation: animate 24s linear infinite;
+  animation-delay: -3s;
+}
+.set div:nth-child(10) {
+  left:95%; animation: animate 21s linear infinite;
+  animation-delay: -2s;
+}
+.set2 div:nth-child(1) {
+  left:10%; animation: animate 22s linear infinite;
+}
+.set2 div:nth-child(2) {
+  left:20%; animation: animate 24s linear infinite;
+  animation-delay: -7s;
+}
+.set2 div:nth-child(3) {
+  left:30%; animation: animate 28s linear infinite;
+}
+.set2 div:nth-child(4) {
+  left:40%; animation: animate 26s linear infinite;
+  animation-delay: -3s;
+}
+.set2 div:nth-child(5) {
+  left:50%; animation: animate 21s linear infinite;
+  animation-delay: -2s;
+}
+.set2 div:nth-child(6) {
+  left:60%; animation: animate 23s linear infinite;
+  animation-delay: -1s;
+}
+.set2 div:nth-child(7) {
+  left:70%; animation: animate 22s linear infinite;
+}
+.set2 div:nth-child(8) {
+  left:80%; animation: animate 30s linear infinite;
+  animation-delay: -7s;
+}
+.set2 div:nth-child(9) {
+  left:90%; animation: animate 24s linear infinite;
+  animation-delay: -3s;
+}
+.set2 div:nth-child(10) {
+  left:95%; animation: animate 21s linear infinite;
+  animation-delay: -2s;
+}
+
+/* flower */
+.mynavbar1 {
+  z-index: 4;
+  position: sticky;
+  margin-top: -2rem;
+  overflow: hidden;
+}
+/* homeFlower */
+.samping1, .samping2 {
+  filter: drop-shadow(5px 5px 20px rgb(201, 201, 201));
+}
+.bunga, .bunga2 {
+  z-index: -2;
+  pointer-events: none;
+  filter: drop-shadow(10px 10px 10px solid black);
+}
+.home .bunga {
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.home .bunga2 {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.info .bunga {
+    overflow-x: hidden;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.info .bunga2 {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.home .samping1 {
+    z-index: -2;
+    position: absolute;
+    bottom: 200px;
+    width: 35%;
+    left: -50px;
+    margin: auto;
+    animation: shake-left 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+.home .samping2 {
+    z-index: -2;
+    position: absolute;
+    top: 200px;
+    width: 30%;
+    right: -40px;
+    margin: auto;
+    animation: shake-right 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+.home .goyang1 {
+    z-index: -2;
+    position: absolute;
+    width: 35%;
+    top: -50px;
+    animation: shake-tl 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+    
+}
+.home .goyang {
+    z-index: -2;
+    position: absolute;
+    width: 35%;
+    top: -50px;
+    animation: shake-tl 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+.home .goyang4 {
+    z-index: -2;
+    position: absolute;
+    width: 30%;
+    left: -70px;
+    top: -10px;
+    animation: shake-tl 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+.home .goyang5 {
+    z-index: -2;
+    position: absolute;
+    width: 50%;
+    top: -60px;
+    animation: shake-tl 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+.home .goyang3 {
+    z-index: -2;
+    position: absolute;
+    width: 30%;
+    top: -50px;
+    left: -50px;
+    animation: shake-tl 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+.home .goyang2 {
+    z-index: -2;
+    position: absolute;
+    width: 20%;
+    top: -50px;
+    left: -50px;
+    animation: shake-tl 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+.home .couple a {
+    font-size: 1.3rem;
+    color: #666;
+}
+.home .yang1 {
+    z-index: -2;
+    position: absolute;
+    right: 0px;
+    bottom: -50px;
+    width: 35%;
+
+    animation: shake-br 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+.home .yang {
+    z-index: -2;
+    position: absolute;
+    right: 0px;
+    bottom: -50px;
+    width: 35%;
+    animation: shake-br 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+.home .yang4 {
+    z-index: -2;
+    position: absolute;
+    width: 30%;
+    right: -70px;
+    bottom: -10px;
+    animation: shake-br 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+.home .yang5 {
+    z-index: -2;
+    position: absolute;
+    width: 50%;
+    right: 0px;
+    bottom: -60px;
+    animation: shake-br 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+.home .yang3 {
+    z-index: -2;
+    position: absolute;
+    width: 30%;
+    right: -50px;
+    bottom: -50px;
+    animation: shake-br 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+.home .yang2 {
+    z-index: -2;
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    width: 20%;
+    animation: shake-br 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+/* infoFlower */
+.info .samping1 {
+  z-index: -2;
+  position: absolute;
+  bottom: 200px;
+  width: 35%;
+  right: -50px;
+  margin: auto;
+  animation: shake-right 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+.info .samping2 {
+  z-index: -2;
+  position: absolute;
+  top: 200px;
+  width: 30%;
+  left: -40px;
+  margin: auto;
+  animation: shake-left 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+.info .goyang1 {
+  z-index: -2;
+  position: absolute;
+  right: 0px;
+  width: 35%;
+  margin-top: -50px;
+  animation: shake-tr 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+  
+}
+
+.info .goyang {
+  z-index: -2;
+  position: absolute;
+  right: 0px;
+  width: 35%;
+  margin-top: -50px;
+  animation: shake-tr 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+.info .goyang4 {
+  z-index: -2;
+  position: absolute;
+  width: 30%;
+  right: -70px;
+  margin-top: -10px;
+  animation: shake-tr 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+.info .goyang5 {
+  z-index: -2;
+  position: absolute;
+  width: 50%;
+  margin-top: -60px;
+  right: 0px;
+  animation: shake-tr 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+.info .goyang3 {
+  z-index: -2;
+  position: absolute;
+  width: 30%;
+  right: 0px;
+  margin-right: -50px;
+  margin-top: -50px;
+  animation: shake-tr 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+.info .goyang2 {
+  z-index: -2;
+  position: absolute;
+  right: 0px;
+  width: 20%;
+  margin-right: -50px;
+  margin-top: -50px;
+  animation: shake-tr 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+.info .yang1 {
+  z-index: -2;
+  position: absolute;
+  left: 0px;
+  bottom: -50px;
+  width: 35%;
+  animation: shake-bl 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+  
+}
+
+.info .yang {
+  z-index: -2;
+  position: absolute;
+  left: 0px;
+  bottom: -50px;
+  width: 35%;
+  animation: shake-bl 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+.info .yang4 {
+  z-index: -2;
+  position: absolute;
+  width: 30%;
+  left: -70px;
+  bottom: -10px;
+  animation: shake-bl 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+.info .yang5 {
+  z-index: -2;
+  position: absolute;
+  width: 50%;
+  left: 0px;
+  bottom: -60px;
+  animation: shake-bl 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+.info .yang3 {
+  z-index: -2;
+  position: absolute;
+  width: 30%;
+  left: -50px;
+  bottom: -50px;
+  animation: shake-bl 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+.info .yang2 {
+  z-index: -2;
+  position: absolute;
+  left: -50px;
+  bottom: -50px;
+  width: 20%;
+  animation: shake-bl 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+/* komenFlowers */
+.komen .bunga {
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.komen .bunga2 {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.komen .samping1 {
+  z-index: -2;
+  position: absolute;
+  bottom: 200px;
+  width: 35%;
+  left: -50px;
+  margin: auto;
+  animation: shake-left 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+.komen .samping2 {
+  z-index: -2;
+  position: absolute;
+  top: 200px;
+  width: 30%;
+  right: -40px;
+  margin: auto;
+  animation: shake-right 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+.komen .goyang1 {
+  z-index: -2;
+  position: absolute;
+  width: 35%;
+  top: -50px;
+  animation: shake-tl 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+  
+}
+.komen .goyang {
+  z-index: -2;
+  position: absolute;
+  width: 35%;
+  top: -50px;
+  animation: shake-tl 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+.komen .goyang4 {
+  z-index: -2;
+  position: absolute;
+  width: 30%;
+  left: -70px;
+  top: -10px;
+  animation: shake-tl 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+.komen .goyang5 {
+  z-index: -2;
+  position: absolute;
+  width: 50%;
+  top: -60px;
+  animation: shake-tl 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+.komen .goyang3 {
+  z-index: -2;
+  position: absolute;
+  width: 30%;
+  top: -50px;
+  left: -50px;
+  animation: shake-tl 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+.komen .goyang2 {
+  z-index: -2;
+  position: absolute;
+  width: 20%;
+  top: -50px;
+  left: -50px;
+  animation: shake-tl 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+.komen .couple a {
+  font-size: 1.3rem;
+  color: #666;
+}
+.komen .yang1 {
+  z-index: -2;
+  position: absolute;
+  right: 0px;
+  bottom: -50px;
+  width: 35%;
+
+  animation: shake-br 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+.komen .yang {
+  z-index: -2;
+  position: absolute;
+  right: 0px;
+  bottom: -50px;
+  width: 35%;
+  animation: shake-br 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+.komen .yang4 {
+  z-index: -2;
+  position: absolute;
+  width: 30%;
+  right: -70px;
+  bottom: -10px;
+  animation: shake-br 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+.komen .yang5 {
+  z-index: -2;
+  position: absolute;
+  width: 50%;
+  right: 0px;
+  bottom: -60px;
+  animation: shake-br 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+.komen .yang3 {
+  z-index: -2;
+  position: absolute;
+  width: 30%;
+  right: -50px;
+  bottom: -50px;
+  animation: shake-br 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+.komen .yang2 {
+  z-index: -2;
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  width: 20%;
+  animation: shake-br 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+/* button2 */
+.komen .lop {
+  font-family: inherit;
+  scale: 0.7;
+  font-size: 20px;
+  background: #15A8F5 !important;
+  color: #F3E9A8;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: 2px dashed #F3E9A8;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+  margin: 1px auto;
+}
+
+.komen .lop span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.komen .lop svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.komen .lop:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.komen .lop:hover svg {
+  transform: translateX(3.5em) rotate(45deg) scale(1.1);
+}
+
+.komen .lop:hover span {
+  transform: translateX(10em);
+}
+
+.komen .lop:active {
+  transform: scale(0.95);
+}
+.lopp {
+  border: none;
+  background-color: transparent;
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.2em);
+  }
+
+  to {
+    transform: translateY(-0.2em);
+  }
+}
+
+
+/* button */
+.hero button, .info button {
+  background: linear-gradient(45deg, transparent 27%, #00aeff 5%, #00aeff 73%, transparent 27%);
+  box-shadow: 6px 0px 0px #ffffff;
+  position: relative;
+  padding: 12px 35px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  border: 3px solid #ffffff;
+  font-family: "Work Sans", sans-serif;
+  letter-spacing: 2px;
+  border-radius: 20px;
+  box-shadow: 0 0 0 #ffffff;
+  transition: all .3s ease-in-out;
+  scale: 0.7;
+  margin-bottom: 50px;
+}
+.star-1 {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 25px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #00aeff);
+  z-index: -5;
+  transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+}
+.star-2 {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #00aeff);
+  z-index: -5;
+  transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+}
+.star-3 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #00aeff);
+  z-index: -5;
+  transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+}
+.star-4 {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  width: 8px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #00aeff);
+  z-index: -5;
+  transition: all .8s cubic-bezier(0, 0.4, 0, 1.01);
+}
+.star-5 {
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #00aeff);
+  z-index: -5;
+  transition: all .6s cubic-bezier(0, 0.4, 0, 1.01);
+}
+.star-6 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #00aeff);
+  z-index: -5;
+  transition: all .8s ease;
+}
+#tomb:hover {
+  background: transparent;
+  color: #ffffff;
+  box-shadow: 0 0 50px #ffffff;
+}
+#tomb:hover .star-1 {
+  position: absolute;
+  top: -80%;
+  left: -30%;
+  width: 25px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #00aeff);
+  z-index: 2;
+}
+#tomb:hover .star-2 {
+  position: absolute;
+  top: -25%;
+  left: 10%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #00aeff);
+  z-index: 2;
+}
+#tomb:hover .star-3 {
+  position: absolute;
+  top: 55%;
+  left: 25%;
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #00aeff);
+  z-index: 2;
+}
+#tomb:hover .star-4 {
+  position: absolute;
+  top: 30%;
+  left: 80%;
+  width: 8px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #00aeff);
+  z-index: 2;
+}
+#tomb:hover .star-5 {
+  position: absolute;
+  top: 25%;
+  left: 115%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #00aeff);
+  z-index: 2;
+}
+#tomb:hover .star-6 {
+  position: absolute;
+  top: 5%;
+  left: 60%;
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #00aeff);
+  z-index: 2;
+}
+.fil0 {
+  fill: #00aeff;
+  border: 3px dashed whitesmoke ;
+}
+.isi {
+  color: #F3E9A8;
+}
+/* infoButton */
+.info button {
+  scale: 0.6;
+  color: #0a0a0a;
+  border: 2px dashed #F3E9A8;
+}
+
+
+/* card */
+.info .card {
+  width: 280px;
+  scale: 0.6;
+  margin: auto;
+  margin-top: -60px;
+  height: 310px;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 32px;
+  padding: 3px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  border: none
+}
+.card .mail {
+  position: absolute;
+  font-family: "Work Sans";
+  letter-spacing: 1px;
+  right: 0;
+  left: 0;
+  top: 1.4rem;
+  background: transparent;
+  border: none;
+}
+.card .mail svg {
+  stroke: #fbb9b6;
+  stroke-width: 3px;
+}
+.card .mail svg:hover {
+  stroke: #f55d56;
+}
+.c2 .card .profile-pic {
+  background-image: url(img/gg.gif );
+  scale: 1;
+  background-size: cover;
+  background-position: top;
+}
+.card .profile-pic {
+  position: absolute;
+  scale: 1;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  background-image: url(img/pngegg-\(1\).gif);
+  background-size: cover;
+  background-position: center;
+  top: 3px;
+  left: 3px;
+  border-radius: 29px;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out 0.2s, z-index 0.5s ease-in-out 0.2s;
+}
+.card .profile-pic img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -o-object-position: 0px 0px;
+  object-position: 0px 0px;
+  transition: all 0.5s ease-in-out 0s;
+}
+.card .profile-pic svg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: 0px 0px;
+  object-position: 0px 0px;
+  transform-origin: 45% 20%;
+  transition: all 0.5s ease-in-out 0s;
+}
+.card .bottom {
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+  right: 3px;
+  background: #00aeff;
+  top: 78%;
+  border-radius: 29px;
+  z-index: 2;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  border: 2px dashed whitesmoke;
+}
+.card .bottom .content {
+  position: absolute;
+  bottom: 0;
+  left: 1.5rem;
+  right: 1.5rem;
+  height: 160px;
+  margin: auto;
+  display: none;
+}
+.card:hover .bottom .content {
+  display: unset;
+}
+.card .bottom .content .name {
+  display: block;
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin:auto;
+  font-size: 3.2rem;
+}
+.card .bottom .content .about-me {
+  display: block;
+  font-size: 0.9rem;
+  color: rgb(255, 255, 255);
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+.card .bottom .bottom-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card .bottom .bottom-bottom .social-links-container {
+  display: flex;
+  gap: 1rem;
+  margin: auto;
+  font-family: "Sacramento";
+  font-weight: bold;
+  color: #F3E9A8;
+  font-size: 6rem;
+}
+.card .bottom .bottom-bottom .social-links-container svg {
+  height: 20px;
+  fill: white;
+  filter: drop-shadow(0 5px 5px rgba(165, 132, 130, 0.1333333333));
+}
+.card .bottom .bottom-bottom .social-links-container svg:hover {
+  fill: #f55d56;
+  transform: scale(1.2);
+}
+.card .bottom .bottom-bottom .button {
+  background: white;
+  color: #fbb9b6;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.6rem;
+  padding: 0.4rem 0.6rem;
+  box-shadow: rgba(165, 132, 130, 0.1333333333) 0px 5px 5px 0px;
+}
+.card .bottom .bottom-bottom .button:hover {
+  background: #f55d56;
+  color: white;
+}
+.card:hover {
+  border-top-left-radius: 55px;
+}
+.card:hover .bottom {
+  top: 20%;
+  border-radius: 80px 29px 29px 29px;
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+}
+.card:hover .profile-pic {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  z-index: 3;
+  transition: all 0.5s ease-in-out, z-index 0.5s ease-in-out 0.1s;
+}
+.card:hover .profile-pic:hover {
+  transform: scale(1.3);
+  border-radius: 0px;
+}
+.card:hover .profile-pic img {
+  transform: scale(2.5);
+  -o-object-position: 0px 25px;
+  object-position: 0px 25px;
+  transition: all 0.5s ease-in-out 0.5s;
+}
+.card:hover .profile-pic svg {
+  transform: scale(2.5);
+  transition: all 0.5s ease-in-out 0.5s;
+}
+.card:hover .mail {
+  opacity: 0;
+}

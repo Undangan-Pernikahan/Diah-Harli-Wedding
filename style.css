@@ -1,0 +1,560 @@
+:root {
+    --pink: #f14e95;
+    --bg: #0a0a0a;
+    --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+body {
+    font-size: 1.2rem;
+    font-family: "Work Sans", sans-serif;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+    flex-direction: column;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background-image: url(img/wedding-1361076_1920.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: 8;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero h1, .hero h4, .hero p, .hero h5, .hero h2, .hero h3 {
+  text-shadow: var(--shadow);
+}
+
+.hero h2 {
+  padding-bottom: 2.5rem;
+  font-size: 1.4rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400
+}
+
+.hero h1, .hero h2 {
+  font-family: "Sacramento";
+  font-size: 5rem;
+  font-family: "Monsieur La Doulaise", cursive;
+}
+
+.hero h4, .hero h5 {
+  font-size: 1.4rem;
+  font-family: "Work Sans", sans-serif;
+  letter-spacing: 1rem;
+  font-weight: 400;
+}
+
+.hero h3 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+}
+
+.hero h3 span {
+    font-family: "Work Sans", sans-serif;
+}
+
+.hero p {
+  font-size: 1.4rem;
+  font-family: "Work Sans", sans-serif;
+  letter-spacing: 1rem;
+}
+
+/* navBar */
+.mynavbar {
+  background-color: #15A8F5;
+  position: relative;
+  z-index: 7;
+  height: 60px;
+  text-align: center;
+  font-family: "Work Sans";
+}
+
+.mynavbar .tabe {
+  font-family: "Work Sans";
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-shadow: var(--shadow);
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.mynavbar .navbar-brand1 {
+  font-family: "Sacramento";
+  position: absolute;
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  opacity: 1;
+}
+.mengaj svg:hover {
+    color: #F3E9A8;
+
+}
+/* Home */
+.home {
+    background-image: linear-gradient(rgb(45, 125, 205) 25%, rgb(163, 221, 240) 50%, dodgerblue);
+    min-height: 100vh;
+    margin-top: -1rem;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    z-index: 1;
+    margin: auto 0;
+    position: relative;
+}
+
+.home h2 {
+    color: #F3E9A8;
+    font-family: "Sacramento", cursive;
+    font-size: 5rem;
+    font-weight: bold;
+    z-index: 2;
+}
+.popup-outer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(1.2);
+    transition: opacity 0.2s 0s ease-in-out,
+                transform 0.2s 0s ease-in-out;
+}
+.popup-outer1 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(1.2);
+    transition: opacity 0.2s 0s ease-in-out,
+                transform 0.2s 0s ease-in-out;
+}
+.show2 .popup-outer1 {
+    opacity: 10;
+    pointer-events: all;
+    transform: scale(1);
+}
+.popup-box{
+    height: 70%;
+    width:80%;
+    position: relative;
+    background-color: white;
+    border-radius: 3%;
+    border: 5px dashed #F3E9A8;
+}
+.popup-box1{
+    height: 350px;
+    width:350px;
+    position: relative;
+    background-color: transparent;
+
+}
+.popup-box .close {
+    font-size: 24px;
+    top: 8px;
+    right: 16px;
+    position: absolute;
+    color: #c22727;
+    cursor: pointer;
+}
+.popup-box1 .close {
+    font-size: 24px;
+    top: 30px;
+    right: 16px;
+    position: absolute;
+    color: #c22727;
+    cursor: pointer;
+}
+.comen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.home h3 {
+    color: whitesmoke;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    z-index: 2;
+    margin-top: -4rem;
+}
+#commento-login-box-container {
+    overflow: hidden;
+}
+.home h4 {
+    font-family: "Scheherazade New", serif;
+    font-size: 3rem;
+    color: #F3E9A8;
+}
+
+.home p, .komen p {
+    font-size: 1.1rem;
+    color:whitesmoke;
+    z-index: 2;
+}
+
+.home .couple {
+    margin-top: 100px;
+    z-index: 2;
+}
+
+.home .couple h3 {
+    font-family: "Sacramento";
+    font-weight: bold;
+    color: #F3E9A8;
+    font-size: 2.4rem;
+    z-index: 2;
+}
+
+.home .couple img {
+    width: 100%;
+    z-index: 2;
+}
+.couple a {
+    color: whitesmoke;
+}
+
+/* info */
+.info {
+    background-image: url(img/symphony.png);
+    z-index: 3;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    background-image: linear-gradient(rgb(45, 125, 205) 25%, rgb(163, 221, 240) 50%, dodgerblue);
+}
+
+.info h2 {
+    position: relative;
+    font-family: "Sacramento";
+    margin-top: 12rem;
+    font-weight: bold;
+    color: #F3E9A8;
+    font-size: 5rem;
+}
+
+.info .alamat  {
+    position: relative;
+    font-size: 1.8rem;
+    font-family: "Work Sans", sans-serif;
+    color: whitesmoke;
+}
+.info h1 {
+    color: whitesmoke;
+}
+.navbar-toggler{
+    border: none;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.show3 .navbar-toggler {
+    opacity: 10;
+    cursor: pointer;
+}
+.navbar-toggler-icon{
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 1.6rem;
+}
+.navbar-toggler-icon svg {
+    width: 24px;
+    height: 24px;
+    margin: auto
+}
+/* komen */
+.komen {
+    margin-top: -1rem;
+    min-height: 100vh;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(rgb(45, 125, 205) 25%, rgb(163, 221, 240) 50%, dodgerblue);
+}
+  .komen h1 {
+    color: #F3E9A8;
+    font-family: "Sacramento", cursive;
+    font-size: 6rem;
+    font-weight: bold;
+    position: relative;
+    margin-top: 8rem;
+  }
+  .pengisi {
+    margin-top: 20%;
+  }
+  .show .popup-outer {
+    opacity: 10;
+    pointer-events: all;
+    transform: scale(1);
+  }
+/* Media Query */
+
+/* laptop */
+@media (min-width: 996px) {
+    html {
+        font-size:75%;
+        overflow-y: scroll;
+    }
+    .goyang, .goyang1,  .goyang2, .goyang3, .goyang4, .goyang5, .yang, .yang1, .yang2, .yang3, .yang4, .yang5, .samping1, .samping2 {
+        scale: 0.47;
+    }
+    .samping1, .samping2 {
+        display: none;
+    }
+    .card .bottom .bottom-bottom .social-links-container {
+        font-size: 2.5rem !important;
+    }
+    .card .bottom .content {
+        top: -3rem !important;
+    }
+    .mynavbar {
+        height: 100px;
+    }
+    .mynavbar a {
+        font-size: 1.3rem !important;
+    }
+    .mynavbar a#ini {
+        font-size: 2rem !important;
+    }
+    .wave, .wave1 {
+        height: 115px !important;
+        width: 100%;
+    }
+    .info .card h1 {
+        display: none;
+    }
+    .info button {
+        margin-bottom: 0;
+        scale: 4 !important;
+    }
+    .c2 {
+        margin-bottom: 3rem;
+    }
+
+}
+@media (max-width: 992px){
+    html {
+        font-size: 75%;
+        overflow-y: scroll;
+    }
+}
+
+/* tablet */
+@media (max-width: 768px) {    
+    html {
+        font-size: 65%;
+    }
+    .simply-countdown>.simply-section {
+        padding: 60px;
+        margin: 5px;
+    }     
+
+    .simply-countdown .simply-section {
+        font-size: large;
+    }
+    
+    .info h2 {
+        margin-top: 10rem;
+    }
+
+    .hero h5 {
+        margin-bottom: 15%;
+    }
+    
+    .hero h1 {
+        font-size: 5rem;
+    }
+    
+    
+    .hero h4, .hero h5{
+        font-size: 1.4rem;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+    }
+    
+    .hero p {
+        font-size: 1.4rem;
+        font-family: "Work Sans", sans-serif;
+        margin-top: 8%;
+    }
+    .hero h3 {
+        margin-top: 20%;
+    }
+    .hero a {
+        color: white;
+        background-color: #00aeff;
+        box-shadow: var(--shadow);
+    }
+
+    .rsvp button {
+        width: 25%;margin-left: 37%;
+
+    }
+
+    .hero h1 {
+        font-size: 9rem;
+        margin-bottom: -2rem;
+        margin-top: -2rem;
+    }
+
+    .hero h2 {
+        font-size: 10rem;
+        margin-bottom: 1rem;
+    }
+
+    .home .couple {
+        margin: auto;
+    }
+
+    .home .couple h3 {
+        font-size: 4.5rem;
+    }
+
+    .home .couple p {
+        font-size: 1.8rem;
+    }
+
+
+}
+@media (min-width:550px) and (max-width:550px) {
+    .goyang, .goyang1,  .goyang2, .goyang3, .goyang4, .goyang5, .yang, .yang1, .yang2, .yang3, .yang4, .yang5, .samping1, .samping2 {
+        scale: 0.5;
+    }
+}
+
+/* mobile phone */
+@media (max-width: 768px) {
+    html {
+    font-size: 60%;}
+        
+    .simply-countdown>.simply-section {
+        padding: 45px;
+        margin: 3px;   
+    }
+
+    .home h3 {
+        margin-bottom: 5rem;
+    }
+
+    .home h4 {
+        font-size: 4rem;
+        margin-bottom: 20px;
+        margin-top: 2rem;
+    }
+
+    .home p, .info p, .rsvp p, .komen p {
+        font-size: 1.8rem !important;
+    }
+
+    .home p {
+        margin-top: 4rem;
+    }
+
+    .hero h4, .hero h5, .hero p, .hero h3{
+        font-size:2.5rem;
+    }
+
+    .info a {
+        font-size: 117%;
+
+    }
+}
+    .komen p {
+        margin: 3rem;
+        text-align: center;
+    }
+/* iphone */
+@media (max-width:768px) {
+    html{
+        font-size: 48%;
+    }
+
+    .simply-countdown>.simply-section {
+        padding: 20px;
+        margin: 1px;   
+    }
+
+    .hero h1 {
+        padding-right: 2rem;
+    }
+
+
+
+}
+@media (max-width:768px) {
+    html{
+        font-size: 46%;
+        width: 100%;
+    }
+
+    .simply-countdown>.simply-section {
+        padding: 35px;
+        margin: 1px;   
+        margin-bottom: 2rem;
+        margin-top: -2rem;
+    }
+    .info h2 {
+        font-size: 6rem;
+    }
+    .hero a {
+        font-size: 2rem;
+    }
+    
+    .mynavbar1{
+        width: 50vh;
+    }
+
+    .set2 {
+        position: absolute; width: 100%; height: auto;
+    }
+    .set {
+        position: absolute; width: 100%; height: auto;
+    }
+
+    .hero h4 {
+        margin-top: 4rem;
+    }
+
+    .home .couple {
+        margin-top: 73px;
+    }
+
+    .home .couple a {
+        margin-top: -4rem;
+    }
+
+    .home .couple .ansar {
+        margin-top: 2rem;
+    }
+
+    .home .couple .ansar a {
+        margin-top: -4rem !important;
+    }
+    .name {
+        font-size: 4rem !important;
+    }
+    .about-me {
+        font-size: 3rem !important;
+    }
+
+}
