@@ -168,8 +168,8 @@ body {
 }
 .popup-box .close {
     font-size: 24px;
-    top: 8px;
-    right: 16px;
+    top: -9%;
+    right: -7%;
     position: absolute;
     color: #c22727;
     cursor: pointer;
